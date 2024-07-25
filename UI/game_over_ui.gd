@@ -1,3 +1,4 @@
+class_name GameOverUI
 extends CanvasLayer
 
 @onready var time_label: Label = %TimeLabel
@@ -19,5 +20,6 @@ func _process(delta):
 		restart_game()
 		
 func restart_game():
-	print("Restart game please")
-	pass
+	GameManager.reset()
+	get_tree().reload_current_scene()
+	

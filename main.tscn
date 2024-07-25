@@ -1,6 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://citm2ro2fpr5q"]
+[gd_scene load_steps=33 format=3 uid="uid://citm2ro2fpr5q"]
 
+[ext_resource type="Script" path="res://main.gd" id="1_2p1kt"]
 [ext_resource type="PackedScene" uid="uid://bb8qw0orgu2dx" path="res://player/player.tscn" id="1_l2p2o"]
+[ext_resource type="PackedScene" uid="uid://ijiruaegui7" path="res://UI/game_over_ui.tscn" id="2_5oy5s"]
 [ext_resource type="PackedScene" uid="uid://cjf02mqpcm0cj" path="res://player/mob_spawner.tscn" id="2_b3faf"]
 [ext_resource type="Texture2D" uid="uid://d4aaalr8rkk3m" path="res://addons/Tiny Swords/Deco/03.png" id="2_sh4q2"]
 [ext_resource type="PackedScene" uid="uid://dkgepwe01cgu6" path="res://UI/game_ui.tscn" id="3_8wpj6"]
@@ -170,6 +172,8 @@ size = Vector2(9917.27, 2635.33)
 
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_2p1kt")
+game_over_ui_template = ExtResource("2_5oy5s")
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
