@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkgepwe01cgu6"]
+[gd_scene load_steps=8 format=3 uid="uid://dkgepwe01cgu6"]
 
 [ext_resource type="Texture2D" uid="uid://8nvpi48rywgs" path="res://addons/Tiny Swords/UI/Banners/Banner_Horizontal.png" id="1_kmq3v"]
 [ext_resource type="Script" path="res://UI/game_ui.gd" id="1_wkucq"]
@@ -18,11 +18,6 @@ texture_margin_bottom = 48.0
 axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 region_rect = Rect2(32, 48, 128, 128)
-
-[sub_resource type="SystemFont" id="SystemFont_wgv6b"]
-font_names = PackedStringArray("JetBrains Mono")
-font_weight = 999
-subpixel_positioning = 0
 
 [sub_resource type="SystemFont" id="SystemFont_ap7h2"]
 font_names = PackedStringArray("JetBrains Mono")
@@ -57,26 +52,10 @@ anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -302.0
 offset_top = 11.0
-offset_right = -11.0
+offset_right = -112.0
 offset_bottom = 98.0
 grow_horizontal = 0
 theme_override_styles/panel = SubResource("StyleBoxTexture_xpgxh")
-
-[node name="GoldLabel" type="Label" parent="Panel"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -13.5
-offset_top = 11.0
-offset_right = 118.5
-offset_bottom = 39.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = SubResource("SystemFont_wgv6b")
-theme_override_font_sizes/font_size = 20
-text = "20.000 Gold"
 
 [node name="MeatLabel" type="Label" parent="Panel"]
 unique_name_in_owner = true
@@ -84,10 +63,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -116.5
-offset_top = 7.0
-offset_right = -19.5
-offset_bottom = 50.0
+offset_left = -50.0
+offset_top = 6.0
+offset_right = 47.0
+offset_bottom = 49.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("SystemFont_ap7h2")
@@ -96,9 +75,9 @@ text = "50 "
 
 [node name="TextureRect" type="TextureRect" parent="Panel"]
 layout_mode = 0
-offset_left = 68.0
-offset_top = -2.0
-offset_right = 124.0
-offset_bottom = 54.0
+offset_left = 105.0
+offset_top = -3.0
+offset_right = 161.0
+offset_bottom = 53.0
 scale = Vector2(0.835, 0.835)
 texture = SubResource("AtlasTexture_4slvt")
